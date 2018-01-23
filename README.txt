@@ -10,7 +10,7 @@ WARNING: Running this program will reset your clipboard.
 
 INSTRUCTIONS
 
-Kill the Messenger generates messages based on a list of messages and a list of wrappers. The message has a chance to be generated with a wrapper around it, and its position is determined by two @’s in the wrapper. For example, if a message was generated with the wrapper “Do your @@ please” and the message “homework”, the complete message would be “Do your homework please”.
+Kill the Messenger generates messages based on a list of messages and a list of wrappers. The message has a chance to be generated with a wrapper around it, and its position is determined by two @’s in the wrapper. For example, if a message was generated with the wrapper “Do your @@ please” and the message “homework”, the complete message would be “Do your homework please”. If a specific message or wrapper appears in a list more than once, it will be more likely to be chosen.
 
 The simplest way to start the script is to open Terminal and type the following:
 “ruby [path to the Kill-The-Messenger folder]/send.rb “John Doe” 3”
@@ -59,13 +59,13 @@ Using -m is a quick way to pass messages into the program. just input message in
 
 syntax: -sw “[wrapper list name]” “wrapper” “wrapper” “wrapper”
 
-If you want to save a list of wrappers to use later, you can easily do so with -sw. First type -sw, then the name you want to save the wrapper list under, and then input wrappers in quotations. You can later load the wrapper list to use by using the -lw argument.
+If you want to save a list of wrappers to use later, you can easily do so with -sw. First type -sw, then the name you want to save the wrapper list under, and then input wrappers in quotations. Saving a list that already exists will add to it. You can later load the wrapper list to use by using the -lw argument.
 
 -sm:
 
 syntax: -sm “[message list name]” “message” “message” “message”
 
-If you want to save a list of messages to use later, you can easily do so with -sm. First type -sm, then the name you want to save the message list under, and then input messages in quotations. You can later load the message list to use by using the -lm argument.
+If you want to save a list of messages to use later, you can easily do so with -sm. First type -sm, then the name you want to save the message list under, and then input messages in quotations. Saving a list that already exists will add to it. You can later load the message list to use by using the -lm argument.
 
 MESSAGE AND WRAPPER LISTS OF THE SAME NAME WILL NOT INTERFERE WITH EACHOTHER
 
