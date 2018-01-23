@@ -38,7 +38,7 @@ def getArgs(arglist)
     if action == "savingMess"
       if sectionInd == 1
         messDict = read("./messages.txt")
-        if messDict
+        if messDict != "empty"
           messDict = eval(messDict)
         else
           messDict = {}
@@ -52,7 +52,7 @@ def getArgs(arglist)
     elsif action == "savingWrap"
       if sectionInd == 1
         wrapDict = read("./wrappers.txt")
-        if wrapDict
+        if wrapDict != "empty"
           wrapDict = eval(wrapDict)
         else
           wrapDict = {}
@@ -66,26 +66,38 @@ def getArgs(arglist)
     elsif action == "loadingMess"
       if sectionInd >= 1
         messList ||= []
-        messDict = eval(read("./messages.txt"))
-        messList.concat(messDict[arg])
+        messDict = read("./messages.txt")
+        if messDict != "empty"
+          messDict = eval(messDict)
+          messList.concat(messDict[arg])
+        end
       end
     elsif action == "loadingWrap"
       if sectionInd >= 1
         wrapList ||= []
-        wrapDict = eval(read("./wrappers.txt"))
-        wrapList += wrapDict[arg]
+        wrapDict = read("./wrappers.txt")
+        if wrapDict != "empty"
+          wrapDict = eval(wrapDict)
+          wrapList += wrapDict[arg]
+        end
       end
     elsif action == "deletingMess"
       if sectionInd >= 1
-        messDict = eval(read("./messages.txt"))
-        messDict.delete(arg)
-        save("./messages.txt", messDict)
+        messDict = read("./messages.txt")
+        if messDict != "empty"
+          messDict = eval(messDict)
+          messDict.delete(arg)
+          save("./messages.txt", messDict)
+        end
       end
     elsif action == "deletingWrap"
       if sectionInd >= 1
-        wrapDict = eval(read("./wrappers.txt"))
-        wrapDict.delete(arg)
-        save("./wrappers.txt", wrapDict)
+        wrapDict = read("./wrappers.txt")
+        if wrapDict != "empty"
+          wrapDict = eval(wrapDict)
+          wrapDict.delete(arg)
+          save("./wrappers.txt", wrapDict)
+        end
       end
     elsif action == "givingMess"
       if sectionInd >= 1
