@@ -28,53 +28,51 @@ A text generated from your message and wrapper lists would be sent to the contac
 
 You can pass arguments to the program from your command, but only after giving it a contact name and a time. Here is a list of arguments, what they do, and how to use them.
 
-### `-w`
+#### `-w`
 
 syntax: `-w “wrapper” “wrapper” “wrapper”`
 
 Using -w is a quick way to pass wrappers into the program. just input wrappers in quotations after typing -w. Every wrapper you type until the next argument or end of line will be used in the program.
 
-### `-m`  
+#### `-m`  
 
 syntax: `-m “message” “message” “message"`
 
 Using -m is a quick way to pass messages into the program. just input message in quotations after typing -m. Every message you type until the next argument or end of line will be used in the program.
 
-### `-sw`  
+#### `-sw`  
 
 syntax: `-sw “[wrapper list name]” “wrapper” “wrapper” “wrapper”`
 
 If you want to save a list of wrappers to use later, you can easily do so with `-sw`. First type `-sw`, then the name you want to save the wrapper list under, followed by the wrappers in quotations. Saving a list that already exists will add to it. You can later load the wrapper list to use by using the -lw argument.
 
-### `-sm`
+#### `-sm`
 
 syntax: `-sm “[message list name]” “message” “message” “message”`
 
 If you want to save a list of messages to use later, you can easily do so with `-sm`. First type `-sm`, then the name you want to save the message list under, and then input messages in quotations. Saving a list that already exists will add to it. You can later load the message list to use by using the -lm argument.
 
-MESSAGE AND WRAPPER LISTS OF THE SAME NAME WILL NOT INTERFERE WITH EACHOTHER
-
-### `-dw`
+#### `-dw`
 
 syntax: `-dw “[wrapper list name]”`
 
 Simply deletes a saved wrapper list. The list will be unrecoverable after deletion.
 
-### `-dm`
+#### `-dm`
 
 syntax: `-dm “[message list name]”`
 
 Simply deletes a saved message list. The list will be unrecoverable after deletion.
 
 
-### `-lw`
+#### `-lw`
 
 syntax: `-lw “[wrapper list name]”`
 
 Loads a previously saved wrapper list and gives it to the program to be used. Multiple list names can be given for the program to use multiple lists.
 
 
-### `-lm`
+#### `-lm`
 
 syntax: `-lm “[message list name]”`
 
