@@ -146,8 +146,8 @@ end
 
 def send(person, timeInt, args, messList=[], wrapList=[])
     path = __dir__
-    system("osascript \"#{path}/getcontacts.txt\";pbpaste >#{path}/contacts.txt")
-    contacts = read("~contacts.txt").split(";")
+    system("osascript \"#{path}/getcontacts.txt\";pbpaste >#{path}/contacts.txt;echo -n '' | pbcopy")
+    contacts = read("#{path}/contacts.txt").split(";")
     contacts.push("[nobody]")
     while contacts.include?(person) == false
         print "Please input a valid contact name: "
