@@ -10,6 +10,4 @@ end repeat
 
 set the clipboard to (retList) as text
 
-do shell script "pbpaste >./contacts.txt"
-
 end tell
