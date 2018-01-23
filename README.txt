@@ -6,6 +6,8 @@ Kill the Messenger is a customizable iMessage spammer meant to help you get your
 
 This program is built for apple computers with iMessage installed and requires Ruby (Ruby is built in to most computers, so don’t worry about it unless you get an error message telling you to).
 
+WARNING: Running this program will reset your clipboard.
+
 INSTRUCTIONS
 
 Kill the Messenger generates messages based on a list of messages and a list of wrappers. The message has a chance to be generated with a wrapper around it, and its position is determined by two @’s in the wrapper. For example, if a message was generated with the wrapper “Do your @@ please” and the message “homework”, the complete message would be “Do your homework please”.
