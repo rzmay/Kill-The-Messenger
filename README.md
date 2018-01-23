@@ -1,13 +1,13 @@
 # Kill the Messenger
-## ABOUT
+## About
 Kill the Messenger is a customizable iMessage spammer meant to help you get your message across. Whether it be getting someone to do their work, asking someone an important question, or just annoying all your friends, Kill the Messenger is here for you.
 ## Dependencies
+The following dependencies are all built into recent Apple computers.
 - AppleScript
 - iMessage
 - Ruby
 
-# Usage
-
+## Usage
 Kill the Messenger generates messages based on a list of messages and a list of wrappers. The message has a chance to be generated with a wrapper around it, and its position is determined by two @’s in the wrapper. For example, if a message was generated with the wrapper “Do your @@ please” and the message “homework”, the complete message would be “Do your homework please”. If a specific message or wrapper appears in a list more than once, it will be more likely to be chosen.
 
 The simplest way to start the script is to open Terminal and enter `ruby path/to/messenger/send.rb “John Doe” 3`
@@ -69,13 +69,13 @@ Simply deletes a saved message list. The list will be unrecoverable after deleti
 
 ### `-lw`
 
-syntax: -lw “[wrapper list name]”
+syntax: `-lw “[wrapper list name]”`
 
 Loads a previously saved wrapper list and gives it to the program to be used. Multiple list names can be given for the program to use multiple lists.
 
 
 ### `-lm`
 
-syntax: -lm “[message list name]”
+syntax: `-lm “[message list name]”`
 
 Loads a previously saved message list and gives it to the program to be used. Multiple list names can be given for the program to use multiple lists.
