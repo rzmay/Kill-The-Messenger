@@ -1,6 +1,6 @@
-# Kill the Messenger
+# Kill The Messenger
 ## About
-Kill the Messenger is a customizable iMessage spammer meant to help you get your message across. Whether it be getting someone to do their work, asking someone an important question, or just annoying all your friends, Kill the Messenger is here for you.
+Kill The Messenger is a customizable iMessage spammer meant to help you get your message across. Whether it be getting someone to do their work, asking someone an important question, or just annoying all your friends, Kill The Messenger is here for you.
 ## Dependencies
 The following dependencies are all built into recent Apple computers.
 - AppleScript
