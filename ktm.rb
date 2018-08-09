@@ -1,7 +1,5 @@
-#Robert May
-#Jan 2018
-#Spams texts
-
+# Kill The Messenger
+# Copyright 2018 Robert May, Ben Botvinick
 
 class String
     def numeric?
